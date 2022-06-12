@@ -60,8 +60,7 @@ try {
         page.click('#select-files-button > div'), // some button that triggers file selection
       ]);
       await fileChooser.accept([upload_file_directory + file_name]);
-      await page.screenshot({'path': 'screenshot.png'});
-      await sleep(10000);
+      await sleep(5000);
 
       // title content
       const text_box = await page.$x("//*[@id=\"textbox\"]");
